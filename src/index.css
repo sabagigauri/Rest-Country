@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  /* padding: 20px; */
+  background-color: #202D36;
+  color: #fff;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2b3743;
+  padding: 10px 20px;
+}
+
+.dark-mode {
+  display: flex;
+}
+
+
+/* Filter */
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px ;
+}
+
+.form-control input {
+  background-color: #2b3743;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 5px;
+  color: #fff;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  width: 100%;
+  margin: 0 0 30px ;
+}
+
+
+
+.select {
+  background-color: #2b3743;
+  color: #fff;
+  font-family: inherit;
+  padding: 12px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-control input::placeholder {
+  color: #fff;
+}
+
+/* Grid */
+.details {
+  background-color: #2b3743;
+  padding: 20px;
+  margin-top: -10px;
+  border-radius: 0 0 5px 5px;
+}
+
+h3 {
+  padding-bottom: 10px;
+}
+
+h4 {
+  padding-bottom: 5px;
+}
+
+span {
+  font-weight: 300;
+}
+
+img {
+  /* max-width: 100%; */
+  border-radius: 5px 5px 0 0 ;  
+  width: 100%;
+  height: 166.41px;
+}
+
+.moon {
+  height: 22px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 20px;
+}
+
+article {
+   box-shadow: 0 10px 10px rgba(32, 45, 54, 0.5);
+}
+
+@media (min-width: 640px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .filter {
+    flex-direction: row;
+  }
+
+  .form-control {
+    width: auto;
+  }
+
+  .form-control input {
+    width: auto;
+    margin: 0;
+  }
+
+  .region-filter {
+  width: auto; 
+}
+
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .header, section, .filter {
+    padding: 20px 100px;
+  }
+
+  body {
+    /* padding: 50px 100px; */
+    gap: 60px;
+  }
+
+  section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
